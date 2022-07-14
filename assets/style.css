@@ -5,3 +5,23 @@ body {
     margin: 0;
     padding: 0;
 }
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+.featured-image {
+    width: 50%;
+    max-height: 300px;
+ }
+
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+ }
