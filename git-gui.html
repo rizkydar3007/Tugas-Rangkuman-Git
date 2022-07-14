@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangkuman Git 3</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Apa itu Git Gui ?</h1>
+            <p>
+            Kita semua sebelumnya sudah mengetahui apa itu Git dan kegunaan nya , Tapi kalian udah mulai mual dengan sistem berbasis CLI (Command Line Interface) yang serba ngetik-ngetik terus pusiang kan ? :)
+            Tapi jangan khawatir ternyata Git pun ada di akses secara GUI (Graphical User Interface) yang serba tinggal klik , yeay jadi mudahkan ? dan fitur dari Git berbasis GUI dapat dieksplor lebih jauh
+            </p>
+        </div>
+        <div>
+            <h1></h1>
+            <article class="card">
+                <h1>sourcetree</h1>
+                <img src="assets/img/sourcetree.png" class="featured-image-1" alt="srctree-img">
+                <p>Sebelumnya kita sudah membahas Sourcetree itu apa dan sekarang kita perlihatkan Git GUI tersebut, lihat gambar dibawah ini tmapilan Git GUI</p>
+                <img src="assets/img/git-sourcetree.png" class="featured-image-3" alt="srctree-img">
+            </article>
+            <article class="card">
+                <h1>Langkah pertama git gui sourcetree</h1>
+                <img src="assets/img/git-sourcetree-1.png" class="featured-image-3" alt="srctree-img">
+                <p>Pilih Clone untuk mengambil repo dari Gitlab/Github kalian atau pili Add seperti lambang folder di gambar diatas untuk mengambil repo dari Local kalian</p>
+                <img src="assets/img/git-sourcetree-clone.png" class="featured-image-3" alt="srctree-img">
+                <img src="assets/img/git-sourcetree-add.png" class="featured-image-3" alt="srctree-img">
+                <p>Nah bila sudah akan muncul tampilan seperti gambar di bawah</p>
+                <img src="assets/img/git-sourcetree.png" class="featured-image-3" alt="srctree-img">
+                <p>Dan boom , itulah Git berbasis GUI , secara fungsi tetap sama ada commit, pull, push, branch, dan merge. Nah tambahan lagi untuk rangkuman ada materi yang cukup menarik yang ditambahkan yaitu diffmerge untuk mengatasi bila terjadi conflict antara perubahan 2 branch pada 1 file yang sama</p>
+            </article>
+            <article class="card">
+                <h1>Diffmerge</h1>
+                <img src="assets/img/sourcetree.png" class="featured-image-1" alt="srctree-img">
+                <p>Nah pertama saya membuat branch baru bernama rizky</p>
+                <img src="assets/img/git-gui-newbranch.png" class="featured-image-3" alt="srctree-img">
+                <p>Maka bila sudah dibuat akan nampak seperti gambar dibawah ini</p>
+                <img src="assets/img/git-gui-newbranch-2.png" class="featured-image-3" alt="srctree-img">
+                <p>Saya akan membuat simulasi conflict saat git akan di merge antara 2 branch yang memliki 1 file yang sama dan terjadi perubahan di kedua branch tersebut, perhatikan gambar dibawah :</p>
+                <img src="assets/img/diffmerge-1.png" class="featured-image-3" alt="srctree-img">
+                <img src="assets/img/diffmerge-2.png" class="featured-image-3" alt="srctree-img">
+                <p>Perhatikan gambar diatas . Kedua gambar tersebut terdapat perubahan pada 1 file yang sama di 2 branch . File index.html saya rubah masing-masing h1 nya berbeda dan akan terjadi conflict pada saat di merge branch rizky ke master</p>
+                <img src="assets/img/diffmerge-3.png" class="featured-image-3" alt="srctree-img">
+                <p>Gambar diatas adalah warning bahwa pada saat branch rizky di merge ke branch master terjadi conflict, maka dari itu langkah selanjutnya untuk agar kita dapat mem push branch kita ke cloud server kita aman maka kita harus selesaikan conflict nya dulu. Perhatikan gambar dibawah , penyelesaian untuk conflict pada branch</p>
+                <h2>Buat branch baru dari branch master bernama conflict</h2>
+                <img src="assets/img/diffmerge-4.png" class="featured-image-3" alt="srctree-img">
+                <h2>Setelah itu merge branch rizky ke branch conflict</h2>
+                <img src="assets/img/diffmerge-5.png" class="featured-image-3" alt="srctree-img">
+                <h2>Pada Uncommitted changes di Unstagged files , index.html nya klik kanan pilih Resolve Conflict</h2>
+                <img src="assets/img/diffmerge-6.png" class="featured-image-3" alt="srctree-img">
+                <h2>Lalu pilih perubahan mana yang akan ditetapkan , kiri , kanan, atau tengah</h2>
+                <img src="assets/img/diffmerge-7.png" class="featured-image-3" alt="srctree-img">
+                <h2>Save perubahan lalu close</h2>
+                <img src="assets/img/diffmerge-8.png" class="featured-image-3" alt="srctree-img">
+                <h2>Di staged files adalah perubahan yang dipilih saat di merge dan yang di Ustagged files perubahan yang sebelumnya bisa disimpan atau dihapus. Jika sudah langsung commit dan merge kembali ke branch master. Selesai</h2>
+                <img src="assets/img/diffmerge-9.png" class="featured-image-3" alt="srctree-img">
+            </article>
+        </div>            
+    </main>
+</body>
+</html>
